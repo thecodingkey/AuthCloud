@@ -43,39 +43,62 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCl-6B-ftL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCl-6B-ftL">
                                 <rect key="frame" x="79" y="458" width="232" height="48"/>
+                                <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="232" id="PSw-ss-azM"/>
                                     <constraint firstAttribute="height" constant="48" id="tkd-cL-ySt"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Iniciar sesión"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Iniciar sesión" image="star.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="loginEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTL-Yq-yKB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVv-9T-lZM">
-                                <rect key="frame" x="111.66666666666669" y="514.66666666666663" width="167" height="35"/>
+                                <rect key="frame" x="111.66666666666669" y="584.66666666666663" width="167" height="35"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Quiero registrarme"/>
                                 <connections>
                                     <action selector="launchRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4p-dR-ppa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF0-HZ-aW2">
+                                <rect key="frame" x="79" y="518" width="232" height="48"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="Zw4-aN-sDP"/>
+                                    <constraint firstAttribute="height" constant="48" id="sW8-YB-Pg2"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Iniciar con google" image="lock" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Seu-NP-HwZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TCl-6B-ftL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4e7-C7-bJj"/>
                             <constraint firstItem="TBb-lO-sxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DKI-XC-9dG"/>
+                            <constraint firstItem="XF0-HZ-aW2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DwE-xY-WZf"/>
                             <constraint firstItem="PpR-cM-HBS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="RtO-wG-o8B"/>
                             <constraint firstItem="PpR-cM-HBS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X4b-40-6on"/>
                             <constraint firstItem="TBb-lO-sxM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YgR-N7-j45"/>
                             <constraint firstItem="TCl-6B-ftL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="aNt-kQ-Z9L"/>
+                            <constraint firstItem="XF0-HZ-aW2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="eXb-4d-fCT"/>
                             <constraint firstItem="YVv-9T-lZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qq1-g6-HZw"/>
                             <constraint firstItem="nMY-jz-hMx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="wVt-Jh-xCf"/>
-                            <constraint firstItem="YVv-9T-lZM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="110" id="xVd-Nq-Cdb"/>
+                            <constraint firstItem="YVv-9T-lZM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="xVd-Nq-Cdb"/>
                             <constraint firstItem="nMY-jz-hMx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zxP-35-iHW"/>
                         </constraints>
                     </view>
@@ -90,12 +113,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lock" catalog="system" width="125" height="128"/>
         <image name="lock.shield.fill" catalog="system" width="128" height="119"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
